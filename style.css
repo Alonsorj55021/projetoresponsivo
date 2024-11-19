@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bree-serif-regular {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+body {
+    background-image: url(./imagens/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1380px;
+    margin: auto;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+}
+
+#logo {
+    max-width: 150px;
+    align-items: center;
+    justify-content: left;
+}
+
+.flex h4 {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header {
+    position: fixed ;
+    width: 100%;
+    padding: 60px 5%;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem {
+    background-color: #000000;
+    padding: 20px 5%;
+}
+
+header.rolagem a, header.rolagem i {
+    color:#ffffff;
+}
+
+header i {
+    color: #ffffff;
+}
+
+header ul {
+    list-style-type: none;
+    
+}
+
+header ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.btn-contato button {
+    width: 230px;
+    height: 40px;
+    border: 0;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 2rem;
+}
+
+.nav a:hover{
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    transition: 0.8s;
+    padding: 8px;
+}
+
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size:m edium;
+}
+
+.contato {
+    width: 65%;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 120px;
+    color: #fff;
+    margin-left: 340px;
+    
+
+}
+
+.formulario {
+    max-width: 100%;
+}
+
+.contato h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.corpo {
+    width: 70%;
+    align-items: center;
+    align-content: center;
+    
+}
+
+.carousel1 {
+    max-width: 64.5%;
+    margin-top: 210px;
+    justify-items: center;
+    margin-left: 340px;
+}
+
+.text-center {
+    margin-top: 80px;
+    
+    
+}
+
+.form-label {
+    justify-items: center;
+}
+
+footer {
+    max-width: 100%;
+    background-color: #000000;
+    color:#fff;
+    padding: 32px;
+    text-align: center;
+}
+
+.text-center {
+    margin-top: 120px;
+}
