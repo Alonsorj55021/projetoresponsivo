@@ -44,11 +44,12 @@ body {
 }
 
 header {
-    position: fixed ;
+    position: sticky ;
     width: 100%;
     padding: 60px 5%;
     top: 0;
     left: 0;
+    right: 0;
     transition: .5s;
 }
 
@@ -102,18 +103,24 @@ header ul li a {
 }
 
 .contato {
-    width: 65%;
+    width: 85%;
     align-items: center;
     margin-top: 100px;
     margin-bottom: 120px;
     color: #fff;
-    margin-left: 340px;
+    margin-left: 100px;
+    padding: 50px;
     
 
 }
 
-.formulario {
-    max-width: 100%;
+.fomulario {
+    max-width: 65%;
+    background-color: #525151;
+    border-radius: 30px;
+    margin-left: 340px;
+   
+
 }
 
 .contato h2 {
@@ -146,14 +153,91 @@ header ul li a {
     justify-items: center;
 }
 
-footer {
-    max-width: 100%;
-    background-color: #000000;
-    color:#fff;
-    padding: 32px;
+
+
+
+footer{
+    background-color: #111;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    align-items: center;
+    align-content: center;
+    font-size: small;
+    padding:  5px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    font-size: small    ;
+    font-family: "Bree Serif", serif;
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
     text-align: center;
 }
-
-.text-center {
-    margin-top: 120px;
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
 }
